@@ -1,0 +1,122 @@
+@media(max-width: 1058px)
+{
+    header
+    {
+        padding: 16px 60px;
+    }
+
+    section
+    {
+        padding: 50px 60px;
+    }
+
+    .home_text h1
+    {
+        font-size: 2.4rem;
+    }
+}
+
+@media(max-width: 991px)
+{
+    header
+    {
+        padding: 16px 4%;
+    }
+
+    section
+    {
+        padding: 50px 4%;
+    }
+
+    .product_container
+    {
+        grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    }
+}
+
+@media(max-width: 768px)
+{
+    header
+    {
+        padding: 12px 4%;
+    }
+
+    #menu_icon
+    {
+        display: initial;
+    }
+
+    .navbar
+    {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        transition: 0.4s all linear;
+        text-align: center;
+        clip-path: circle(0% at 100% 1%);
+        box-shadow: var(--box-shadow);
+    }
+
+    .navbar.active
+    {
+        clip-path: circle(144% at 100% 1%);
+    }
+}
+
+@media(max-width: 614px)
+{
+    .home_text
+    {
+        padding: 15px;
+    }
+
+    .home_text h1
+    {
+        font-size: 2rem;
+    }
+
+    .about
+    {
+        text-align: center;
+    }
+
+    .about_img
+    {
+        order: 2;
+    }
+}
+
+@media(max-width: 360px)
+{
+    header
+    {
+        padding: 11px 4%;
+    }
+
+    .header_icon .bx
+    {
+        padding: 4px;
+    }
+
+    .home_text h1
+    {
+        font-size: 1.8rem;
+    }
+
+    .about_text h2, .heading h2, .newsletter h2
+    {
+        font-size: 1.2rem;
+    }
+
+    .newsletter form input
+    {
+        width: auto;
+    }
+    
+}
